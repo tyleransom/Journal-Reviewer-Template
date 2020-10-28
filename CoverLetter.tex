@@ -1,0 +1,74 @@
+\documentclass[12pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[latin9]{inputenc}
+\usepackage{fancyhdr}
+\usepackage[dvinames]{xcolor}
+\definecolor{oucrimson}{RGB}{125.,30. ,40. } % OU crimson
+\usepackage[top=2.4in,left=1in,bottom=1in,right=1in]{geometry}
+\usepackage{graphicx}
+\usepackage[colorlinks=true,
+            urlcolor=oucrimson,
+            pdfborder={0 0 0},
+            ]{hyperref}
+\usepackage{lipsum}
+\usepackage[absolute]{textpos}
+\usepackage{setspace}
+\setstretch{1.15}
+
+\parindent.5pt
+\setlength{\parskip}{0.7\baselineskip}
+%\raggedright
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}
+\rhead{}
+\lhead{}
+\rfoot{}
+\cfoot{
+\fontfamily{phv}\selectfont {\scriptsize FOOTER GOES HERE}}
+
+\begin{document}
+\begin{textblock*}{7in}[0,0](1in,.6in)
+    \vspace{-.5in}
+    \centering
+    \huge{LETTERHEAD GOES HERE}
+    % \includegraphics[width=.2\textwidth]{graphics-file}
+\end{textblock*}
+
+\vspace{1.8in}
+
+\begin{flushright}
+{[}Date{]}
+\end{flushright}
+
+{[}Editor Name{]}\\
+{[}Editor Position{]}\\
+\emph{Journal Title}
+
+
+\vspace{.2in}
+
+Dear Editor,
+
+I have reviewed manuscript {[}Manuscript Number{]} entitled ``Paper Title.'' {[}Short summary of what the paper is about and key claims it makes{]}
+
+{[}Overall assessment of the paper: is it publishable? could it be publishable after a reasonable amount of revision? What evidence contained in the paper can you base your arguments on?{]}
+
+{[}Clearly state your recommendation here{]}
+
+%%% UNCOMMENT THESE NEXT FOUR LINES IF YOUR LETTER SPANS MULTIPLE PAGES
+% \pagebreak
+% \newgeometry{top=1in,left=1in,bottom=1in,right=1in}
+% \newpage
+% \cfoot{}
+
+\bigskip
+
+Yours sincerely, \par
+
+\hspace{-10pt}\vspace{-10pt}\includegraphics[height=2.0\baselineskip]{random-person.png} \par
+\vspace{-10pt}
+\bigskip
+\medskip
+Random Person \\
+Assistant Professor of Economics
+\end{document}

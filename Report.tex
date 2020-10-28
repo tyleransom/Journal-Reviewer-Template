@@ -1,0 +1,42 @@
+\documentclass[12pt]{article}
+\usepackage[latin9]{inputenc}
+\usepackage{geometry}
+\geometry{verbose,tmargin=2.54cm,bmargin=2.54cm,lmargin=2.54cm,rmargin=2.54cm}
+\usepackage{amsmath}
+\usepackage{amstext}
+\usepackage{setspace}
+\usepackage[authoryear]{natbib}
+\usepackage{verbatim}
+\usepackage{listings}
+\setstretch{1.15}
+\usepackage[unicode=true,pdfusetitle,
+ bookmarks=true,bookmarksnumbered=false,bookmarksopen=false,
+ breaklinks=true,pdfborder={0 0 0},pdfborderstyle={},backref=false,colorlinks=false]
+ {hyperref}
+\usepackage{breakurl}
+\begin{document}
+
+\title{\textbf{Report on }\\
+\textbf{``Paper Title''}\\
+{[}Journal Manuscript No.{]}}
+\author{}
+\date{}
+
+\maketitle
+
+{[}A couple of paragraphs summarizing the paper and what I took away from it, what its contribution is, and my overall assessment{]}
+
+\section*{Main Comments}
+
+[Dive in here on the points the paper needs to address to be publishable]
+
+\section*{Other Comments}
+[List other comments on here, like papers that should have been cited, typos found, ways the paper could be more readable]
+\begin{itemize}
+    \item You should cite \citet{acemoglu_al2001}.
+\end{itemize}
+
+\bibliography{biblio}
+\bibliographystyle{jpe}
+
+\end{document}
